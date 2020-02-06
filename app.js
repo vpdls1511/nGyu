@@ -5,20 +5,19 @@ const router = express.Router();
 
 var fs = require('fs');
 var ejs = require('ejs');
-var multer  =   require('multer');
-var crypto = require('crypto');
-var mysql = require('mysql'); //mysql 모듈을 로딩.
 
 const app = express();
 const port = process.env.PORT||3000;
+
+const main = require('./route/main');
+
 
 // SETTING
 app.use('/', express.static(__dirname + '/views'));
 
 
 //ROUTING
-const main = require('./route/main');
-app.get('/', main);
+app.use('/', main);
 
 
 app.listen(port, err =>{
