@@ -10,6 +10,8 @@ const app = express();
 const port = process.env.PORT||8080;
 
 const main = require('./route/main');
+const app.set('view engine', 'ejs');
+
 
 
 // SETTING
