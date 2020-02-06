@@ -1,1 +1,5 @@
-var title = "nGyu - portfolio";
+const title = "nGyu - portfolio";
+
+module.export = {
+  title,
+};

@@ -12,12 +12,14 @@ var mysql = require('mysql'); //mysql 모듈을 로딩.
 const app = express();
 const port = process.env.PORT||3000;
 
+// SETTING
 app.use('/', express.static(__dirname + '/views'));
 
 
-app.get('/', function(req, res, next){
+//ROUTING
+const main = require('./route/main');
+app.get('/', main);
 
-});
 
 app.listen(port, err =>{
 	 if(err)
