@@ -2,13 +2,24 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title> <%= title %> </title>
   </head>
   <body>
     <nav>
-      <header>
-        <img src="./img/logo.png" alt="">
-      </header>
+
+        <header id="headerMain">
+          <img src="./img/logo.png" width="60px;" alt="">
+        </header>
+        <ul id="sidemenu">
+          <li onclick="javascript:test();">M</li>
+          <li>P</li>
+          <li>H</li>
+          <li>A</li>
+        </ul>
     </nav>
   </body>
+
+  <script type="text/javascript" src="./js/setting.js"></script>
 </html>
