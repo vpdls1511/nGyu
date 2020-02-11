@@ -11,9 +11,9 @@ function acyncMovePage(url){
 
   $.ajax(ajaxOption).done(function(data){
     // Contents 영역 삭제
-    $('#content').children().remove();
+    $('#main').children().remove();
     // Contents 영역 교체
-    $('#content').html(data);
+    $('#main').html(data);
   });
 }
 
