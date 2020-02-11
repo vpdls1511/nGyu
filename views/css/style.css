@@ -1,5 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800&display=swap');
 
+/*
+*
+*
+*
+* Main CSS
+*
+*
+*
+*/
+
+
+
+
+/*
+
+Side Menu Setting area
+
+***************************************************/
 
 html, body{
   margin: 0px;
@@ -7,6 +25,7 @@ html, body{
   height: 100%;
 }
 nav{
+  float: left;
   width: 70px;
   height: 100%;
   background-color: #CBFFAB;
@@ -42,4 +61,22 @@ ul#sidemenu > li{
 }
 ul#sidemenu > li:hover {
   background-color: #DFFECE;
+}
+
+div.sns-icon{
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+}
+div.sns-icon > img:first-child{
+  margin-right: 4px;
+}
+/*
+
+Main Content Section
+
+***************************************************/
+section#main{
+  width: calc(100% - 70px);
+  margin-left: 70px;
 }
