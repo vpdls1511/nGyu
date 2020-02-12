@@ -14,4 +14,12 @@ router.get('/portfolio', function(req,res,next){
   res.render('tab/portfolio');
 });
 
+router.get('/history', function(req,res,next){
+  res.render('tab/history');
+});
+
+router.get('/about', function(req,res,next){
+  res.render('tab/about');
+});
+
 module.exports = router;
