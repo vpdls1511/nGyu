@@ -77,6 +77,7 @@ Main Content Section
 
 ***************************************************/
 section#main{
-  width: calc(100% - 70px);
   margin-left: 70px;
+  width: calc(100% - 70px);
+  height: 100%;
 }
