@@ -1,3 +1,8 @@
+// main page auto click event
+$(document).ready(function(){
+  $('.menu-active').click();
+});
+
 // div content chage to html
 function acyncMovePage(url){
   // ajax option
