@@ -7,7 +7,11 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/main', function(req,res,next){
-  res.render('main');
+  res.render('tab/main');
+});
+
+router.get('/portfolio', function(req,res,next){
+  res.render('tab/portfolio');
 });
 
 module.exports = router;
